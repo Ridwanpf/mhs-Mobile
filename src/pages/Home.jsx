@@ -1,10 +1,8 @@
 import { View, Text, Image, TouchableOpacity, Alert } from 'react-native'
 import React from 'react'
 
-const App = () => {
-  const onPress = () => {
-    Alert.alert ('Pembayaran berhasil')
-  }
+const Home = ({navigation}) => {
+
   return (
     <View>
 
@@ -29,12 +27,15 @@ const App = () => {
             </View>
 
             <View>
-              <Text></Text>
+              <Text style= {{marginTop : 14,
+              fontWeight:'bold',
+              color :  'rgb(102, 255, 102)'
+              }}>Menu makanan</Text>
             </View>
 
             <View
             style = {{
-              marginTop: 20,
+              marginTop: 10,
               flexDirection :'row',
               borderWidth :1
             }}
@@ -76,15 +77,17 @@ const App = () => {
               borderColor : 'pink'
             }}
             >
+                <TouchableOpacity onPress={() => navigation.navigate('Kembali')}>
               <View
-               style = {{
+              style = {{
                 height :150,
                 borderWidth: 1,
                 borderRadius: 12
-               }}
-               >
+              }}
+              >
                 <Image resizeMode= 'contain'    style = {{ height: 148, borderRadius:12, alignItems : 'center', width:184}} source={require ('../assets/images/Resep-Nasi-Tumpeng-Kuning-1200x900.jpg')}/>
                 </View>
+              
                 <View>
                   <Text style = {{
                     marginTop :12,
@@ -96,6 +99,7 @@ const App = () => {
                     marginTop : 4
                   }}>Rp24.500 </Text>
                 </View>
+                </TouchableOpacity>
             
               </View>
               
@@ -173,28 +177,10 @@ const App = () => {
               
    
             </View>
-            <TouchableOpacity onPress={onPress} >
-            <View style = {{
-              backgroundColor : 'red',
-              marginTop: 150,
-              height : 55,
-              borderRadius :40,
-              marginHorizontal:50
-            }}>
-              <Text style = {{
-                color : 'rgb(0,0,0)',
-                textAlign : 'center',
-                marginTop :19
-              }}>
-                Bayar
-              </Text>
-              
-            </View>
-            </TouchableOpacity>
       </View>
 
 
   )
 }
 
-export default App
+export default Home
