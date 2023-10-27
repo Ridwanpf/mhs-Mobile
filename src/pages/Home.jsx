@@ -28,6 +28,10 @@ const App = () => {
                </View>
             </View>
 
+            <View>
+              <Text></Text>
+            </View>
+
             <View
             style = {{
               marginTop: 20,
@@ -101,7 +105,7 @@ const App = () => {
             </View>
             <View
             style = {{
-              marginTop: 0,
+              marginTop: 30,
               flexDirection :'row',
               borderWidth :1
             }}
@@ -118,7 +122,7 @@ const App = () => {
                style = {{
                 height :150,
                 borderWidth: 1,
-                borderRadius: 12
+                borderRadius: 12,
                }}
                >
                 <Image resizeMode= 'contain'    style = {{ height: 148, borderRadius:12, alignItems : 'center', width:184}} source={require ('../assets/images/lime.jpg')}/>
