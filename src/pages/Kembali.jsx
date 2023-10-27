@@ -33,21 +33,13 @@ const Kembali = ({navigation}) => {
         telur dadar yang diiris, teri kacang.
         </Text>
 
-        <View style = {{
-          borderWidth : 1,
-          borderColor : 'rgb(192,192,192)',
-          marginTop : 10
-        }} 
-        >
-        </View>
-
         <View>
           <TextInput style = {{
             height : 50,
             borderWidth :1,
             width : 350,
             borderRadius : 40,
-            marginTop : 20,
+            marginTop : 40,
             alignItems : 'center',
             marginHorizontal : 40
           }}  placeholder='Menu tambahan'>

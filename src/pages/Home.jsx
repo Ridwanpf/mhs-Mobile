@@ -29,7 +29,7 @@ const Home = ({navigation}) => {
             <View>
               <Text style= {{marginTop : 14,
               fontWeight:'bold',
-              color :  'rgb(102, 255, 102)'
+              color :  'rgb(0,0,0)'
               }}>Menu makanan</Text>
             </View>
 
@@ -37,24 +37,15 @@ const Home = ({navigation}) => {
             style = {{
               marginTop: 10,
               flexDirection :'row',
-              borderWidth :1
             }}
             >
                 <View
             style={{
               flex: 1,
               padding: 12,
-              borderWidth :2,
-              borderColor : 'pink'
             }}
             >
-               <View
-               style = {{
-                height :150,
-                borderWidth: 1,
-                borderRadius: 12
-               }}
-               >
+               <View>
                 <Image resizeMode= 'contain'    style = {{ height: 148, borderRadius:12, alignItems : 'center', width:184}} source={require ('../assets/images/nasgor.jpg')}/>
                </View>
                
@@ -73,18 +64,10 @@ const Home = ({navigation}) => {
             style={{
               flex: 1,
               padding: 12,
-              borderWidth :2,
-              borderColor : 'pink'
             }}
             >
                 <TouchableOpacity onPress={() => navigation.navigate('Kembali')}>
-              <View
-              style = {{
-                height :150,
-                borderWidth: 1,
-                borderRadius: 12
-              }}
-              >
+              <View>
                 <Image resizeMode= 'contain'    style = {{ height: 148, borderRadius:12, alignItems : 'center', width:184}} source={require ('../assets/images/Resep-Nasi-Tumpeng-Kuning-1200x900.jpg')}/>
                 </View>
               
@@ -107,25 +90,30 @@ const Home = ({navigation}) => {
               
    
             </View>
+
+            <View>
+              <Text style= {{marginTop : 14,
+              fontWeight:'bold',
+              color :  'rgb(0,0,0)'
+              }}>Menu makanan</Text>
+            </View>
+
             <View
             style = {{
               marginTop: 30,
               flexDirection :'row',
-              borderWidth :1
             }}
             >
                 <View
             style={{
               flex: 1,
               padding: 12,
-              borderWidth :2,
-              borderColor : 'pink'
             }}
             >
                <View
                style = {{
                 height :150,
-                borderWidth: 1,
+ 
                 borderRadius: 12,
                }}
                >
@@ -146,14 +134,12 @@ const Home = ({navigation}) => {
             style={{
               flex: 1,
               padding: 12,
-              borderWidth :2,
-              borderColor : 'pink'
             }}
             >
               <View
                style = {{
                 height :150,
-                borderWidth: 1,
+    
                 borderRadius: 12
                }}
                >
